@@ -18,6 +18,32 @@ function transform(/* arr */) {
   // remove line with error and write your code here
 }
 
+// function transform(arr) {
+//   let tempArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//       if (discardNext(arr[i])) {
+//           i++;
+//       }
+//       if (discardPrev(arr[i])) {
+//           tempArr.splice(i, 1);
+//       }
+//       if (doubleNext(arr[i])) {
+//           tempArr.push(arr[i + 1]);
+//       }
+//       if (doubledPrev(arr[i])) {
+//           tempArr.push(arr[i - 1]);
+//       }
+//       if (!(discardNext(arr[i]) || discardPrev(arr[i]) || doubleNext(arr[i]) || doubledPrev(arr[i]))) {
+//           tempArr.push(arr[i]);
+//       }
+//   }
+//   function discardNext(e) { return e === '--discard-next' };
+//   function discardPrev(e) { return e === '--discard-prev' };
+//   function doubleNext(e) { return e === '--double-next' };
+//   function doubledPrev(e) { return e === '--discard-prev' };
+//   return tempArr;
+// }
+
 module.exports = {
   transform
 };
